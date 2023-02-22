@@ -42,7 +42,7 @@ namespace BookStore.Controllers
             if (user == null)
             {
                 ViewBag.ErrorMessage = $"User with Id = {userId} cannot be found";
-                return View("NotFound");
+                return View("Error");
             }
             ViewBag.UserName = user.UserName;
             var model = new List<ManageUserRolesViewModel>();
